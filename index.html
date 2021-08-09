@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <!-- defer가 있어야 페이지를 모두 로드된 후 스크립트 실행. 그냥 body 아래에 쓸 걸... -->
+    <title>유튜브</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">Youtube</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+
+    <!-- video player -->
+    <section class="player">
+        <video controls src=""></video>
+    </section>
+
+    <div class="infoAndUpNext">
+        <!-- video info -->
+        <section class="info">
+            <!-- meda data -->
+            <div class="metadata">
+                <ul class="hashtag">
+                    <li>#FrontEnd</li>
+                    <li>#ReactiveWeb</li>
+                    <li>#css</li>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="title clamp">
+                        YOUTUBE clone coding: mobile version & pc website version | 유튜브 레이아웃 클론코딩: 모바일과 PC 웹사이트가 다르게 보이는 반응형 웹 사이트 만들기 | HTML, CSS, 반응형 웹, 클론코딩
+                    </span>
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <span class="views">조회수 103,943회 1개월 전</span>
+            </div>
+            <!-- actions -->
+            <ul class="actions">
+                <li><button>
+                    <i class="active fas fa-thumbs-up"></i>
+                    <span>204</span>
+                </button></li>
+                <li><button>
+                    <i class="fas fa-thumbs-down"></i>
+                    <span>0</span>
+                </button></li>
+                <li><button>
+                    <i class="fas fa-share"></i>
+                    <span>공유</span>
+                </button></li>
+                <li><button>
+                    <i class="fas fa-plus"></i>
+                    <span>나중에 볼 영상</span>
+                </button></li>
+                <li><button>
+                    <i class="fab fa-font-awesome-flag"></i>
+                    <span>신고</span>
+                </button></li>
+            </ul>
+            <!-- channels -->
+            <div class="channel">
+                <div class="metadata">
+                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="kimcodell의 프로필 이미지">
+                    <!-- <i class="far fa-user"></i> -->
+                    <div class="info">
+                        <span class="name">kimcodell</span>
+                        <span class="subscribers">103만</span>
+                    </div>
+                </div>
+                <button class="subscribe">구독</button>
+            </div>
+        </section>
+        
+        <!-- upNext -->
+        <section class="upNext">
+            <span class="title">다음 영상</span>
+            <ul>
+                <li class="item">
+                    <div class="img">
+                        <img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/cocker-spaniel-2785074_1280.jpg" alt="dog">
+                    </div>
+                    <div class="info">
+                        <span class="title">영상제목 빠르게 짓는 방법 1</span>
+                        <span class="name">dogsTv</span>
+                        <span class="views">2,934회</span>
+                    </div>
+                    <button class="moreBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+                <li class="item">
+                    <div class="img">
+                        <img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/cocker-spaniel-2785074_1280.jpg" alt="dog">
+                    </div>
+                    <div class="info">
+                        <span class="title">영상제목 빠르게 짓는 방법 2</span>
+                        <span class="name">dogsTv</span>
+                        <span class="views">1,509회</span>
+                    </div>
+                    <button class="moreBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+                <li class="item">
+                    <div class="img">
+                        <img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/cocker-spaniel-2785074_1280.jpg" alt="dog">
+                    </div>
+                    <div class="info">
+                        <span class="title">영상제목 빠르게 짓는 방법 3</span>
+                        <span class="name">dogsTv</span>
+                        <span class="views">1,127회</span>
+                    </div>
+                    <button class="moreBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
